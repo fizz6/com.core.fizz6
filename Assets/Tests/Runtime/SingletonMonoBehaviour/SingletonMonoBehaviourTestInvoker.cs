@@ -7,7 +7,7 @@ namespace Fizz6.Core.Test
     {
         private void Start()
         {
-            Assert.IsTrue(SingletonMonoBehaviourImplementer.Instance.GetType() == typeof(SingletonMonoBehaviourImplementer));
+            Assert.IsTrue(SingletonMonoBehaviourTestImplementer.Instance.GetType() == typeof(SingletonMonoBehaviourTestImplementer));
         }
     }
 }
