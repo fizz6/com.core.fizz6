@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Fizz6
 {
-    public class SingletonMonoBehaviour : MonoBehaviour
+    public abstract class SingletonMonoBehaviour : MonoBehaviour
     {
         private const string SingletonGameObjectName = "[SingletonMonoBehaviours]";
         
@@ -25,7 +25,7 @@ namespace Fizz6
         }
     }
     
-    public class SingletonMonoBehaviour<T> : SingletonMonoBehaviour where T : SingletonMonoBehaviour<T>
+    public abstract class SingletonMonoBehaviour<T> : SingletonMonoBehaviour where T : SingletonMonoBehaviour<T>
     {
         private static T _instance;
         public static T Instance => _instance == null
