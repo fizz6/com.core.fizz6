@@ -3,7 +3,7 @@ using UnityEngine.Assertions;
 
 namespace Fizz6.Core.Test
 {
-    public class SingletonMonoBehaviourTester : MonoBehaviour
+    public class SingletonMonoBehaviourTestInvoker : MonoBehaviour
     {
         private void Start()
         {
